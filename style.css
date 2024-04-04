@@ -105,7 +105,6 @@ p{
     transform:scale(0);
     transform-origin: top right;
     opacity: 0;
-
     transition: 1s;
 }
 .chid-div3:hover p{
@@ -133,8 +132,6 @@ p{
     opacity: 1;
 }
 
-/* Screen Change Media */
-
 @media screen and (min-width: 370px) and (max-width: 716px) {
     .Cont {
         width: 90%; 
@@ -156,5 +153,7 @@ p{
     p {
         padding: 20px; 
         font-size: 18px; 
+        opacity: 1; 
     }
+
 }
