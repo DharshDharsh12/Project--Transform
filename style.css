@@ -132,3 +132,29 @@ p{
     transform:scalex(100%);
     opacity: 1;
 }
+
+/* Screen Change Media */
+
+@media screen and (min-width: 370px) and (max-width: 716px) {
+    .Cont {
+        width: 90%; 
+        margin: 30px auto; 
+    }
+
+    section {
+        width: 90%; 
+        max-width: none; 
+    }
+
+    .pic1,
+    .pic2,
+    .pic3,
+    .pic4 {
+        width: 100%; 
+    }
+
+    p {
+        padding: 20px; 
+        font-size: 18px; 
+    }
+}
