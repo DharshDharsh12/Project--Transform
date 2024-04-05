@@ -32,6 +32,29 @@
         will always be there when you need him.</p>
     </div>
   </section>
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const contDivs = document.querySelectorAll('.Cont');
+      
+      contDivs.forEach(function(contDiv) {
+        // Check if setPointerCapture() is available in the browser
+        if ('setPointerCapture' in contDiv) {
+          // Use setPointerCapture() if available
+          contDiv.addEventListener('pointerdown', function(event) {
+            // Use setPointerCapture() to capture pointer events
+            contDiv.setPointerCapture(event.pointerId);
+          });
+        } else {
+          // Fallback to setCapture() if setPointerCapture() is not available
+          contDiv.addEventListener('mousedown', function() {
+            // Use setCapture() to capture mouse events
+            contDiv.setCapture();
+          });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
